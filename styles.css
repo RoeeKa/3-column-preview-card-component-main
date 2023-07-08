@@ -49,13 +49,26 @@ html, body {
     background-color: var(--bright-orange);
 }
 
+#flex-container .item:nth-child(1) button {
+    color: var(--bright-orange);
+}
+
 #flex-container .item:nth-child(2) {
     background-color: var(--dark-cyan);
+}
+
+#flex-container .item:nth-child(2) button {
+    color: var(--dark-cyan);
 }
 
 #flex-container .item:nth-child(3) {
     background-color: var(--very-dark-cyan);
 }
+
+#flex-container .item:nth-child(3) button {
+    color: var(--very-dark-cyan);
+}
+
 
 #flex-container .item img {
     height: 40px;
@@ -75,7 +88,6 @@ html, body {
 
 #flex-container .item button {
     background-color: var(--very-light-gray);
-    color: var(--bright-orange);
     font-family: 'Lexend Deca', sans-serif;
     border-radius: 20px;
     border-style: none;
