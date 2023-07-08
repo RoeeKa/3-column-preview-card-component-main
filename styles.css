@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+
+
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+#main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#flex-container {
+    display: flex;
+    max-width: 800px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+#flex-container .item {
+    color: var(--transparent-white);
+    min-height: 400px;
+    padding: 30px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+#flex-container .item:nth-child(1) {
+    background-color: var(--bright-orange);
+}
+
+#flex-container .item:nth-child(2) {
+    background-color: var(--dark-cyan);
+}
+
+#flex-container .item:nth-child(3) {
+    background-color: var(--very-dark-cyan);
+}
+
+#flex-container .item img {
+    height: 40px;
+    width: 64px;
+}
+
+#flex-container .item h1 {
+    color: var(--very-light-gray);
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+}
+
+#flex-container .item p {
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+
+#flex-container .item button {
+    background-color: var(--very-light-gray);
+    color: var(--bright-orange);
+    font-family: 'Lexend Deca', sans-serif;
+    border-radius: 20px;
+    border-style: none;
+    padding: 10px 0;
+    margin: auto 60px 10px 0;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+@-moz-document url-prefix() {
+    @media screen and (max-width: 1000px) {
+        #flex-container {
+            flex-direction: column;
+            max-width: 300px;
+        }
+    }
+}
